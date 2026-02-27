@@ -239,57 +239,84 @@ class MemoryGame {
         .jogo-board { gap: 20px; }
       }
       @media (max-width: 768px) {
+        .jogo-memoria-wrapper { padding: 40px 15px; }
         .jogo-memoria-container { padding: 40px 20px; }
         .jogo-intro { padding: 50px 30px; }
-        .jogo-intro h2 { font-size: 48px; }
-        .intro-subtitle { font-size: 24px; }
-        .intro-description { font-size: 16px; }
-        .difficulty-title { font-size: 22px; }
-        .difficulty-buttons { gap: 30px; }
-        .difficulty-btn { padding: 35px 40px; min-width: 200px; }
-        .difficulty-name { font-size: 22px; }
-        .difficulty-info { font-size: 14px; }
-        .jogo-header { gap: 40px; }
-        .jogo-title h2 { font-size: 40px; }
-        .jogo-title p { font-size: 16px; }
-        .stat-value { font-size: 32px; }
-        .jogo-board { gap: 15px; }
+        .jogo-intro h2 { font-size: 40px; }
+        .intro-subtitle { font-size: 22px; }
+        .intro-description { font-size: 15px; }
+        .difficulty-title { font-size: 20px; }
+        .difficulty-buttons { gap: 20px; }
+        .difficulty-btn { padding: 30px 35px; min-width: 180px; }
+        .difficulty-name { font-size: 20px; }
+        .difficulty-info { font-size: 13px; }
+        .jogo-header { gap: 30px; flex-direction: column; }
+        .jogo-title h2 { font-size: 34px; }
+        .jogo-title p { font-size: 15px; }
+        .jogo-stats { gap: 15px; }
+        .stat { padding: 18px 22px; }
+        .stat-value { font-size: 28px; }
+        .jogo-board { gap: 12px; padding: 20px 10px; }
         
-        /* Tablets e Telas Menores */
-        .memory-card { width: 160px; height: 210px; }
-        .card-front { font-size: 55px; }
-        .card-name-overlay { font-size: 14px; padding: 8px; }
-        .card-achievement { font-size: 13px; padding: 10px; line-height: 1.3; }
+        /* Tablets */
+        .memory-card { width: 150px; height: 195px; }
+        .card-front { font-size: 50px; }
+        .card-name-overlay { font-size: 13px; padding: 8px; }
+        .card-achievement { font-size: 12px; padding: 10px; line-height: 1.3; }
         
-        .won-content { padding: 50px 40px; }
-        .won-content h3 { font-size: 42px; }
-        .won-content p { font-size: 18px; }
-        .final-stats p { font-size: 16px; }
-        .score-highlight { font-size: 24px; }
-        .restart-button { padding: 14px 30px; font-size: 16px; }
-        .reset-button, .back-button { padding: 12px 30px; font-size: 14px; }
+        .won-content { padding: 45px 35px; }
+        .won-content h3 { font-size: 38px; }
+        .won-content p { font-size: 17px; }
+        .final-stats p { font-size: 15px; }
+        .score-highlight { font-size: 22px; }
+        .restart-button { padding: 14px 28px; font-size: 16px; }
+        .reset-button, .back-button { padding: 12px 28px; font-size: 14px; }
       }
       @media (max-width: 480px) {
-        .jogo-intro h2 { font-size: 36px; }
-        .intro-subtitle { font-size: 18px; }
-        .intro-description { font-size: 14px; }
-        .difficulty-buttons { flex-direction: column; gap: 20px; }
-        .difficulty-btn { width: 100%; min-width: unset; padding: 30px 30px; }
+        .jogo-memoria-wrapper { padding: 30px 10px; }
+        .jogo-memoria-container { padding: 25px 12px; border-radius: 14px; }
+        .jogo-intro { padding: 30px 15px; }
+        .jogo-intro h2 { font-size: 28px; }
+        .intro-subtitle { font-size: 16px; }
+        .intro-description { font-size: 13px; }
+        .difficulty-title { font-size: 16px; margin-bottom: 20px; }
+        .difficulty-buttons { flex-direction: column; gap: 15px; }
+        .difficulty-btn { width: 100%; min-width: unset; padding: 22px 20px; }
         .difficulty-name { font-size: 18px; }
         .difficulty-info { font-size: 12px; }
-        .jogo-title h2 { font-size: 28px; }
-        .stat-value { font-size: 24px; }
+        .jogo-header { gap: 20px; margin-bottom: 25px; }
+        .jogo-title h2 { font-size: 22px; }
+        .jogo-title p { font-size: 13px; }
+        .jogo-stats { gap: 10px; }
+        .stat { padding: 12px 16px; }
+        .stat-label { font-size: 11px; }
+        .stat-value { font-size: 20px; }
+        .jogo-board { gap: 8px; padding: 15px 8px; }
         
-        /* Celulares - Tamanho máximo possível sem quebrar layout */
-        .memory-card { width: 135px; height: 175px; }
-        .card-front { font-size: 45px; }
-        .card-name-overlay { font-size: 12px; padding: 6px; }
-        .card-achievement { font-size: 11px; padding: 8px; line-height: 1.25; }
+        /* Celulares - cards menores */
+        .memory-card { width: calc(50% - 10px); max-width: 160px; height: 160px; }
+        .card-front { font-size: 40px; }
+        .card-name-overlay { font-size: 11px; padding: 5px; }
+        .card-achievement { font-size: 10px; padding: 7px; line-height: 1.25; }
         
-        .won-content { padding: 40px 30px; }
-        .won-content h3 { font-size: 32px; }
+        .won-content { padding: 30px 20px; margin: 10px; }
+        .won-content h3 { font-size: 28px; }
         .won-content p { font-size: 14px; }
-        .restart-button, .reset-button, .back-button { width: 100%; }
+        .final-stats { padding: 20px 15px; }
+        .final-stats p { font-size: 14px; }
+        .score-highlight { font-size: 22px; }
+        .modal-buttons { flex-direction: column; gap: 12px; }
+        .restart-button, .reset-button, .back-button { width: 100%; padding: 14px 20px; font-size: 15px; }
+        .jogo-controls { flex-direction: column; gap: 12px; }
+      }
+      @media (max-width: 360px) {
+        .memory-card { width: calc(50% - 6px); height: 140px; }
+        .card-front { font-size: 32px; }
+        .card-name-overlay { font-size: 10px; padding: 4px; }
+        .card-achievement { font-size: 9px; padding: 5px; }
+        .jogo-intro h2 { font-size: 22px; }
+        .jogo-title h2 { font-size: 18px; }
+        .stat-value { font-size: 18px; }
       }
     `;
     document.head.appendChild(style);
