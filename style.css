@@ -1,0 +1,348 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-family: 'Bricolege Grotesque';
+    font-size: 100px;
+    font-weight: 700;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background-color: #AE607F;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-style: italic;
+    
+}
+
+
+/* Estilos Gerais para o Header e Nav */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    
+}
+
+.navbar {
+    background-color: #7B0F33;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    gap: 200px;               /* Espaçamento entre os itens */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo dos Links e Botão/Details */
+.nav-item, 
+.menuSuspenso summary {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    justify-content: space-around;
+    font-size: 35px;
+    font-family: 'Bricolage Grotesque', cursive;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none; /* Remove a setinha do details */
+    transition: color 0.3s;
+}
+
+.nav-item:hover,
+.menuSuspenso summary:hover {
+    color: #fce4ec; /* Cor no hover */
+    text-decoration: underline;
+    transition: border-color 0.3s;
+
+}
+
+/* Estilo do Menu Suspenso (Dropdown) */
+.menuSuspenso details {
+    position: relative;
+}
+
+.menuConteudo {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 150px;
+    z-index: 10;
+    font-size: 20px;
+    text-align: center;
+}
+
+.menuConteudo a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #7B0F33;
+    font-family: 'Bricolage Grotesque', cursive;
+    padding: 5px;
+    transition: background 0.3s;
+}
+
+.menuConteudo a:hover {
+    background-color: #f3e5f5;
+    color: #7B0F33;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7B0F33;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background-color: #7B0F33;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+
+/* CARROSSEL */
+
+.carrossel {
+    width: 100%;
+    Height: 950px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    animation: slide 50s infinite;
+}
+
+.slide {
+    width: 100%;
+    flex: 1 0 100%;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    object-fit: cover; 
+}
+
+/* Animação do carrossel */
+@keyframes slide {
+    0%   { transform: translateX(0); }
+    20%  { transform: translateX(0); }
+
+    33%  { transform: translateX(-100%); }
+    53%  { transform: translateX(-100%); }
+
+    66%  { transform: translateX(-200%); }
+    86%  { transform: translateX(-200%); }
+
+    100% { transform: translateX(0); }
+}
+
+
+/* PERSONALIDADES */
+
+.personalidades {
+    text-align: center;
+}
+
+.personalidades h2 {
+    color: white;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    align-items: center; 
+    gap: 40x;
+    flex-wrap: nowrap; 
+}
+
+.personalidade {
+     display: flex;
+    justify-content: center; /* centraliza horizontal */
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+    transition: 0.3s;
+    border: 0;
+}
+
+.personalidade img {
+    width: 80%;       /* deixa grande */
+    max-width: 1300px; /* limite máximo */
+    height: auto;
+    border-radius: 30px;
+    display: block;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+.personalidade:hover {
+    transform: scale(1.05);
+}
+.grace{
+    background-image: url("imagensFundo/fundos/fundoGrace.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.feifei{
+    background-image: url("imagensFundo/fundos/fundoFeifei.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hedy{
+    background-image: url("imagensFundo/fundos/fundoHedy.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.annie{
+    background-image: url("imagensFundo/fundos/fundoAnnie.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+.ada{
+    background-image: url("imagensFundo/fundos/fundoAda.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.margaret {
+    background-image: url("imagensFundo/fundos/fundoMargaret.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.katherine {
+    background-image: url("imagensFundo/fundos/fundoKatherine.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.kimberly{
+    background-image: url("imagensFundo/fundos/fundoKimberly.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.frase{
+    background-color: #F8F9F0;
+    background-image: url("imagensFundo/fundos/fundoFrase.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.frasefinal{
+    width: 80%;       /* deixa grande */
+    max-width: 1300px;
+    margin: 30px 0px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+    border-radius: 30px;
+}
+.frasefinal:hover{
+    transition: 0.3s;
+     transform: scale(1.02);
+}
+
+.footer {
+    background: linear-gradient(135deg, #5a0d24, #7B0F33);
+    color: white;
+    padding: 60px 20px 30px 20px;
+    margin-top: 80px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-logo h2 {
+    font-family: 'Bricolage Grotesque', cursive;
+    font-size: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.footer-logo p {
+    opacity: 0.8;
+    font-size: 16px;
+    text-align: left;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f8bbd0;
+}
+
+.footer-copy {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 13px;
+    opacity: 0.7;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 20px;
+}
